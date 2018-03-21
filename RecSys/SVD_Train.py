@@ -69,6 +69,7 @@ def get_random_batches(inp, b_size):
     # Get random set of indexes from 0 to length of the dataset.
     idxs = np.random.randint(0, inp.shape[0], b_size)
     output = inp[idxs, :]
+    # Returns a list of numpy arrays of users, movies and the ratings given by the user to the movie. 
     return [output[:, i] for i in range(inp.shape[1])]    
 
 # Loading data from the csv file
