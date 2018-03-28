@@ -46,8 +46,8 @@ imported_meta = tf.train.import_meta_graph('./save/model.meta')
 init_op = tf.global_variables_initializer()
 
 sess = tf.Session()
-imported_meta.restore(sess,  './save/model.ckpt')
 sess.run(init_op)
+imported_meta.restore(sess,  './save/model.ckpt')
 output = tf.get_collection('output_')[0]
 
 app = Flask(__name__)
