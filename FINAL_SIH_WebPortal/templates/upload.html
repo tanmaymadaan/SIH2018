@@ -1,0 +1,23 @@
+﻿<! DOCTYPE html>
+<html lang="en">
+
+<body style="background-image:url('C:/Users/Srile_000/Desktop/JustTrying/bg2.jpg')" text="white">
+<head>
+    <meta charset = "UTF-8">
+    <title>DDPocket</title>
+</head>
+
+<h1 align ="center">VIDEO UPLOADER</h1> 
+<H5 ALIGN="RIGHT" color="white"> <a href="sign_up.html"> SIGN OUT</a> <BR> </H5>
+<body>
+
+<form id = "upload-form" action="{{ url_for('upload') }}" method = "POST" enctype = "multipart/form-data">
+<input type ="file" name = "file" accept = "videos/*" multiple><br><br><br><br><br><br> 
+
+<a href="sign_up.html" onclick="alert('Successfully Uploaded!!')">SEND</a>
+
+</body>
+<BR> 	
+<BR>
+</body>
+</html>
